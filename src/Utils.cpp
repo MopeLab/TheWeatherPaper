@@ -1,7 +1,7 @@
 #include "Utils.h"
 
 
-void initDisplay(GxEPD2_BW<EpdDriver, EpdDriver::HEIGHT> display, int EpdSckPin, int EpdMosiPin, int EpdCsPin)
+void initDisplay(GxEPD2_BW<EpdDriver, EpdDriver::HEIGHT> &display, int EpdSckPin, int EpdMosiPin, int EpdCsPin)
 {
     // 墨水屏没有 MISO，因此该位置使用 -1。
     SPI.begin(
